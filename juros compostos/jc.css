@@ -13,20 +13,19 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url(00012.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 100%, rgba(0,70,255,1) 100%);
     margin: 0;
-    font-family: Arial, sans-serif; /* Definindo fonte para todo o corpo */
+    font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
+
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    backdrop-filter: blur(10px); /* Adiciona um desfoque ao fundo */
+    backdrop-filter: blur(10px);
 }
 
 
@@ -47,18 +46,17 @@ body {
     font-weight: bold;
     border-radius: 5px;
     text-decoration: underline;
-    transition: background-image 0.3s; /* Transição para o gradiente ao passar o mouse */
+    transition: background-image 0.3s; 
 }
 
 .navbar ul li a:hover {
-    background-image: var(--linear-gradient); /* Gradiente ao passar o mouse */
+    background-image: var(--linear-gradient);
 }
 
-/* Conteúdo Principal */
 #base {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralizando verticalmente */
+    align-items: center;
     justify-content: center;
     flex-grow: 1;
     padding-top: 20px;
@@ -92,7 +90,7 @@ body {
     position: absolute;
     content: '';
     height: 3px;
-    width: 245px;
+    width: 305px;
     background: var(--linear-gradient);
     bottom: 2px;
 }

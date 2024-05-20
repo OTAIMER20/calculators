@@ -14,8 +14,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #060606;
-    color: #fff; /* Alterado para branco */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 100%, rgba(0,70,255,1) 100%);
+    color: #fff;
 }
 
 /* Cabeçalho */

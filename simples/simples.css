@@ -12,20 +12,19 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url(00012.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 100%, rgba(0,70,255,1) 100%);
     margin: 0;
-    font-family: Arial, sans-serif; /* Definindo fonte para todo o corpo */
+    font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
+
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    backdrop-filter: blur(10px); /* Adiciona um desfoque ao fundo */
+    backdrop-filter: blur(10px);
 }
 
 
@@ -46,15 +45,15 @@ body {
     font-weight: bold;
     border-radius: 5px;
     text-decoration: underline;
-    transition: background-image 0.3s; /* Transição para o gradiente ao passar o mouse */
+    transition: background-image 0.3s; 
 }
 
 .navbar ul li a:hover {
-    background-image: var(--linear-gradient); /* Gradiente ao passar o mouse */
+    background-image: var(--linear-gradient);
 }
 
 footer {
-    background-color: transparent; /* Fundo transparente */
+    background-color: transparent;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -144,5 +143,5 @@ button:active {
     height: 3px;
     width: 560px;
     background: var(--linear-gradient);
-    bottom: 385px;
+    bottom: 355px;
 }
