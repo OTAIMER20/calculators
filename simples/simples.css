@@ -145,7 +145,7 @@ button:active {
     height: 3px;
     width: 560px;
     background: var(--linear-gradient);
-    bottom: 385px;
+    bottom: 370px;
 }
 
 #particles-js {
