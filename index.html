@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+
+    <div id="particles-js"></div>
+
     <header class="header">
         <nav class="navbar">
             <ul>
@@ -16,20 +18,165 @@
                 <li><a href="juros simples/js.html">Juros Simples</a> </li>
                 <li><a href="juros compostos/jc.html">Juros Compostos</a> </li>
                 <li><a href="regra de tres simples/tres-simples.html">Regra de 3</a> </li>
-                <li><a href="imc/imc.html">IMC</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <h1>Calculadoras Web</h1>
-        <p>Bem-vindo ao meu portal de calculadoras online! Aqui você encontrará uma variedade de ferramentas para facilitar seus cálculos em diferentes áreas, desde finanças até matemática básica.</p>
-        <hr>
+
+        <div class="container">
+            <section id="intro">
+                <h2>Bem-vindo ao Portal de Calculadoras Online</h2>
+                <p>Aqui, a minha missão é simplificar os cálculos simples e financeiros para você. Desenvolvi um conjunto de calculadoras fáceis de usar para ajudá-lo a tomar decisões informadas e precisas.</p>
+            </section>
+            <div id="calculadoras">
+                <div class="calculadora" id="simples">
+                    <h3>Calculadora Simples</h3>
+                    <p>Realize cálculos matemáticos simples de forma rápida e fácil.</p>
+                    <a href="simples/simples.html">Use Agora</a>
+                </div>
+                <div class="calculadora" id="juros-simples">
+                    <h3>Calculadora de Juros Simples</h3>
+                    <p>Calcule o montante de uma aplicação de capital  em um período específico.</p>
+                    <a href="juros simples/js.html">Use Agora</a>
+                </div>
+                <div class="calculadora" id="juros-compostos">
+                    <h3>Calculadora de Juros Compostos</h3>
+                    <p>Entenda o crescimento dos seus investimentos ao longo do tempo, considerando a capitalização dos juros.</p>
+                    <a href="juros compostos/jc.html">Use Agora</a>
+                </div>
+                <div class="calculadora" id="regra-de-3">
+                    <h3>Calculadora de Regra de 3</h3>
+                    <p>Resolva problemas de proporções e descubra valores desconhecidos de maneira rápida e eficiente.</p>
+                    <a href="regra de tres simples/tres-simples.html">Use Agora</a>
+                </div>
+            </div>
+
     </main>
-
-
+    <div class="content">
+        <div class="widget6">
+            <span>Recomendações minhas: </span>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4990WGpsj4hRSKDww2g8Sn?utm_source=generator" width="70%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
     <footer>
-        <p>&copy; 2024 Calculadoras Web. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Calculadoras Web. Criado por <a href="https://www.instagram.com/otaimer_dev/">OTAIMER DEV</a>.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS('particles-js', {
+          "particles": {
+            "number": {
+              "value": 100, // Número de partículas
+              "density": {
+                "enable": true,
+                "value_area": 700 // Área em que as partículas serão distribuídas
+              }
+            },
+            "color": {
+              "value": "#ffffff" // Cor das partículas
+            },
+            "shape": {
+              "type": "circle", // Formato das partículas
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+    </script>
 </body>
 </html>
